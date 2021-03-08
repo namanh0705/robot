@@ -63,17 +63,17 @@ class Controller():
 
     self.RobotFaceWindow = GUI.RobotFaceWindow(app,self.worker)
     self.RobotTalkWindow = GUI.RobotTalkWindow(app)
-    self.ShowSearchContainer = GUI.ShowSearchContainer(app)
-    self.ShowSearchBooking = GUI.ShowSearchBooking(app)
-    self.ShowSearchBill = GUI.ShowSearchBill(app)
-    self.ShowSearchLamHang = GUI.ShowSearchLamhang(app)
+    # self.ShowSearchContainer = GUI.ShowSearchContainer(app)
+    # self.ShowSearchBooking = GUI.ShowSearchBooking(app)
+    # self.ShowSearchBill = GUI.ShowSearchBill(app)
+    # self.ShowSearchLamHang = GUI.ShowSearchLamhang(app)
 
     self.worker.signals.signal_robotfacewindow.connect(self.showRobotFaceWindow)
     self.worker.signals.signal_robottalkwindow.connect(self.showRobotTalkWindow)
-    self.worker.signals.signal_searchcontainer.connect(self.showShowSearchContainer)
-    self.worker.signals.signal_searchbooking.connect(self.showShowSearchBooking)
-    self.worker.signals.signal_searchbill.connect(self.showShowSearchBill)
-    self.worker.signals.signal_searchlamhang.connect(self.showShowSearchLamHang)
+    # self.worker.signals.signal_searchcontainer.connect(self.showShowSearchContainer)
+    # self.worker.signals.signal_searchbooking.connect(self.showShowSearchBooking)
+    # self.worker.signals.signal_searchbill.connect(self.showShowSearchBill)
+    # self.worker.signals.signal_searchlamhang.connect(self.showShowSearchLamHang)
 
 
     self.showRobotFaceWindow()
@@ -95,14 +95,14 @@ class Controller():
     self.showXwindow(self.RobotFaceWindow,self.currentWindow is not None)
   def showRobotTalkWindow(self):
     self.showXwindow(self.RobotTalkWindow,self.currentWindow is not None)
-  def showShowSearchContainer(self):
-    self.showXwindow(self.ShowSearchContainer,self.currentWindow is not None)
-  def showShowSearchBooking(self):
-    self.showXwindow(self.ShowSearchBooking,self.currentWindow is not None)
-  def showShowSearchBill(self):
-    self.showXwindow(self.ShowSearchBill,self.currentWindow is not None)
-  def showShowSearchLamHang(self):
-    self.showXwindow(self.ShowSearchLamHang,self.currentWindow is not None)
+  # def showShowSearchContainer(self):
+  #   self.showXwindow(self.ShowSearchContainer,self.currentWindow is not None)
+  # def showShowSearchBooking(self):
+  #   self.showXwindow(self.ShowSearchBooking,self.currentWindow is not None)
+  # def showShowSearchBill(self):
+  #   self.showXwindow(self.ShowSearchBill,self.currentWindow is not None)
+  # def showShowSearchLamHang(self):
+  #   self.showXwindow(self.ShowSearchLamHang,self.currentWindow is not None)
 
 
 def main():
