@@ -1,3 +1,5 @@
+#!/usr/bin/env python
+# -*- coding: utf-8 -*- 
 # import sys
 # from PyQt5.Qt import *
 # from PyQt5.QtWebEngineWidgets import *
