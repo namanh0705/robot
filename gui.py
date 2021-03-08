@@ -214,25 +214,25 @@ class RobotTalkWindow(QMainWindow):
 #     print("Close RobotFaceWindow")
 
 # class ShowSearchLamhang(QMainWindow):
-  def __init__(self, app):
-    super(ShowSearchLamhang,self).__init__()
-    screen = app.primaryScreen()
-    rect = screen.availableGeometry()
-    self.title = "Window"
-    self.l = 450
-    self.t = 450
-    self.w = rect.width()
-    self.h = rect.height() -  self.t
-    self.initUI()
-    self.closeEvent = self._closeEvent
+  # def __init__(self, app):
+  #   super(ShowSearchLamhang,self).__init__()
+  #   screen = app.primaryScreen()
+  #   rect = screen.availableGeometry()
+  #   self.title = "Window"
+  #   self.l = 450
+  #   self.t = 450
+  #   self.w = rect.width()
+  #   self.h = rect.height() -  self.t
+  #   self.initUI()
+  #   self.closeEvent = self._closeEvent
 
-  def initUI(self):
-    self.setWindowTitle(self.title) 
-    self.setWindowFlag(Qt.FramelessWindowHint)  
-    self.setGeometry(left, top, wight, height)
-    self.brower = QWebEngineView()
-    self.brower.load(QUrl(taudanglamhang))
-    windowLayout = QGridLayout()
+  # def initUI(self):
+    # self.setWindowTitle(self.title) 
+    # self.setWindowFlag(Qt.FramelessWindowHint)  
+    # self.setGeometry(left, top, wight, height)
+    # self.brower = QWebEngineView()
+    # self.brower.load(QUrl(taudanglamhang))
+    # windowLayout = QGridLayout()
     # widget = QWidget()
     # self.displayCamLabel = QLabel(widget)
     # self.movie = QMovie("2.gif")
@@ -242,11 +242,11 @@ class RobotTalkWindow(QMainWindow):
     # infoWidgetLayout = QGridLayout()
     # inputInfoLayout = QGridLayout()
     # infoWidget.setLayout(infoWidgetLayout)
-    windowLayout.addWidget(self.brower)
+    # windowLayout.addWidget(self.brower)
 
     # widget.setLayout(windowLayout)
     # self.setCentralWidget(widget)
-    self.setCentralWidget(self.brower)  
+    # self.setCentralWidget(self.brower)  
   
-  def _closeEvent(self,even):
-    print("Close RobotFaceWindow")
+  # def _closeEvent(self,even):
+  #   print("Close RobotFaceWindow")
