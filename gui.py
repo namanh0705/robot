@@ -6,7 +6,7 @@ from PyQt5.QtWidgets import *
 from PyQt5.QtGui import *
 from PyQt5 import QtCore, QtGui, QtWidgets
 from PyQt5.QtGui import QMovie
-from PyQt5.QtWebEngineWidgets import *
+# from PyQt5.QtWebEngineWidgets import *
 import re
 import sys
 import os
@@ -99,121 +99,121 @@ class RobotTalkWindow(QMainWindow):
   def _closeEvent(self,even):
     print("Close RobotFaceWindow")
 
-class ShowSearchContainer(QMainWindow):
-  def __init__(self, app):
-    super(ShowSearchContainer,self).__init__()
-    screen = app.primaryScreen()
-    rect = screen.availableGeometry()
-    self.title = "Window"
-    self.l = 450
-    self.t = 450
-    self.w = rect.width()
-    self.h = rect.height() -  self.t
-    self.initUI()
-    self.closeEvent = self._closeEvent
+# class ShowSearchContainer(QMainWindow):
+#   def __init__(self, app):
+#     super(ShowSearchContainer,self).__init__()
+#     screen = app.primaryScreen()
+#     rect = screen.availableGeometry()
+#     self.title = "Window"
+#     self.l = 450
+#     self.t = 450
+#     self.w = rect.width()
+#     self.h = rect.height() -  self.t
+#     self.initUI()
+#     self.closeEvent = self._closeEvent
 
-  def initUI(self):
-    self.setWindowTitle(self.title) 
-    self.setWindowFlag(Qt.FramelessWindowHint)  
-    self.setGeometry(left, top, wight, height)
-    self.brower = QWebEngineView()
-    self.brower.load(QUrl(tracuucontainer))
-    windowLayout = QGridLayout()
-    # widget = QWidget()
-    # self.displayCamLabel = QLabel(widget)
-    # self.movie = QMovie("2.gif")
-    # self.displayCamLabel.setMovie(self.movie)
-    # self.movie.start()
-    # infoWidget = QWidget(widget)
-    # infoWidgetLayout = QGridLayout()
-    # inputInfoLayout = QGridLayout()
-    # infoWidget.setLayout(infoWidgetLayout)
-    windowLayout.addWidget(self.brower)
+#   def initUI(self):
+#     self.setWindowTitle(self.title) 
+#     self.setWindowFlag(Qt.FramelessWindowHint)  
+#     self.setGeometry(left, top, wight, height)
+#     self.brower = QWebEngineView()
+#     self.brower.load(QUrl(tracuucontainer))
+#     windowLayout = QGridLayout()
+#     # widget = QWidget()
+#     # self.displayCamLabel = QLabel(widget)
+#     # self.movie = QMovie("2.gif")
+#     # self.displayCamLabel.setMovie(self.movie)
+#     # self.movie.start()
+#     # infoWidget = QWidget(widget)
+#     # infoWidgetLayout = QGridLayout()
+#     # inputInfoLayout = QGridLayout()
+#     # infoWidget.setLayout(infoWidgetLayout)
+#     windowLayout.addWidget(self.brower)
 
-    # widget.setLayout(windowLayout)
-    # self.setCentralWidget(widget)
-    self.setCentralWidget(self.brower)  
+#     # widget.setLayout(windowLayout)
+#     # self.setCentralWidget(widget)
+#     self.setCentralWidget(self.brower)  
   
-  def _closeEvent(self,even):
-    print("Close RobotFaceWindow")
+#   def _closeEvent(self,even):
+#     print("Close RobotFaceWindow")
 
-class ShowSearchBooking(QMainWindow):
-  def __init__(self, app):
-    super(ShowSearchBooking,self).__init__()
-    screen = app.primaryScreen()
-    rect = screen.availableGeometry()
-    self.title = "Window"
-    self.l = 450
-    self.t = 450
-    self.w = rect.width()
-    self.h = rect.height() -  self.t
-    self.initUI()
-    self.closeEvent = self._closeEvent
+# class ShowSearchBooking(QMainWindow):
+#   def __init__(self, app):
+#     super(ShowSearchBooking,self).__init__()
+#     screen = app.primaryScreen()
+#     rect = screen.availableGeometry()
+#     self.title = "Window"
+#     self.l = 450
+#     self.t = 450
+#     self.w = rect.width()
+#     self.h = rect.height() -  self.t
+#     self.initUI()
+#     self.closeEvent = self._closeEvent
 
-  def initUI(self):
-    self.setWindowTitle(self.title) 
-    self.setWindowFlag(Qt.FramelessWindowHint)  
-    self.setGeometry(left, top, wight, height)
-    self.brower = QWebEngineView()
-    self.brower.load(QUrl(tracuubooking))
-    windowLayout = QGridLayout()
-    # widget = QWidget()
-    # self.displayCamLabel = QLabel(widget)
-    # self.movie = QMovie("2.gif")
-    # self.displayCamLabel.setMovie(self.movie)
-    # self.movie.start()
-    # infoWidget = QWidget(widget)
-    # infoWidgetLayout = QGridLayout()
-    # inputInfoLayout = QGridLayout()
-    # infoWidget.setLayout(infoWidgetLayout)
-    windowLayout.addWidget(self.brower)
+#   def initUI(self):
+#     self.setWindowTitle(self.title) 
+#     self.setWindowFlag(Qt.FramelessWindowHint)  
+#     self.setGeometry(left, top, wight, height)
+#     self.brower = QWebEngineView()
+#     self.brower.load(QUrl(tracuubooking))
+#     windowLayout = QGridLayout()
+#     # widget = QWidget()
+#     # self.displayCamLabel = QLabel(widget)
+#     # self.movie = QMovie("2.gif")
+#     # self.displayCamLabel.setMovie(self.movie)
+#     # self.movie.start()
+#     # infoWidget = QWidget(widget)
+#     # infoWidgetLayout = QGridLayout()
+#     # inputInfoLayout = QGridLayout()
+#     # infoWidget.setLayout(infoWidgetLayout)
+#     windowLayout.addWidget(self.brower)
 
-    # widget.setLayout(windowLayout)
-    # self.setCentralWidget(widget)
-    self.setCentralWidget(self.brower)  
+#     # widget.setLayout(windowLayout)
+#     # self.setCentralWidget(widget)
+#     self.setCentralWidget(self.brower)  
   
-  def _closeEvent(self,even):
-    print("Close RobotFaceWindow")
+#   def _closeEvent(self,even):
+#     print("Close RobotFaceWindow")
 
-class ShowSearchBill(QMainWindow):
-  def __init__(self, app):
-    super(ShowSearchBill,self).__init__()
-    screen = app.primaryScreen()
-    rect = screen.availableGeometry()
-    self.title = "Window"
-    self.l = 450
-    self.t = 450
-    self.w = rect.width()
-    self.h = rect.height() -  self.t
-    self.initUI()
-    self.closeEvent = self._closeEvent
+# class ShowSearchBill(QMainWindow):
+#   def __init__(self, app):
+#     super(ShowSearchBill,self).__init__()
+#     screen = app.primaryScreen()
+#     rect = screen.availableGeometry()
+#     self.title = "Window"
+#     self.l = 450
+#     self.t = 450
+#     self.w = rect.width()
+#     self.h = rect.height() -  self.t
+#     self.initUI()
+#     self.closeEvent = self._closeEvent
 
-  def initUI(self):
-    self.setWindowTitle(self.title) 
-    self.setWindowFlag(Qt.FramelessWindowHint)  
-    self.setGeometry(left, top, wight, height)
-    self.brower = QWebEngineView()
-    self.brower.load(QUrl(tracuutheobill))
-    windowLayout = QGridLayout()
-    # widget = QWidget()
-    # self.displayCamLabel = QLabel(widget)
-    # self.movie = QMovie("2.gif")
-    # self.displayCamLabel.setMovie(self.movie)
-    # self.movie.start()
-    # infoWidget = QWidget(widget)
-    # infoWidgetLayout = QGridLayout()
-    # inputInfoLayout = QGridLayout()
-    # infoWidget.setLayout(infoWidgetLayout)
-    windowLayout.addWidget(self.brower)
+#   def initUI(self):
+#     self.setWindowTitle(self.title) 
+#     self.setWindowFlag(Qt.FramelessWindowHint)  
+#     self.setGeometry(left, top, wight, height)
+#     self.brower = QWebEngineView()
+#     self.brower.load(QUrl(tracuutheobill))
+#     windowLayout = QGridLayout()
+#     # widget = QWidget()
+#     # self.displayCamLabel = QLabel(widget)
+#     # self.movie = QMovie("2.gif")
+#     # self.displayCamLabel.setMovie(self.movie)
+#     # self.movie.start()
+#     # infoWidget = QWidget(widget)
+#     # infoWidgetLayout = QGridLayout()
+#     # inputInfoLayout = QGridLayout()
+#     # infoWidget.setLayout(infoWidgetLayout)
+#     windowLayout.addWidget(self.brower)
 
-    # widget.setLayout(windowLayout)
-    # self.setCentralWidget(widget)
-    self.setCentralWidget(self.brower)  
+#     # widget.setLayout(windowLayout)
+#     # self.setCentralWidget(widget)
+#     self.setCentralWidget(self.brower)  
   
-  def _closeEvent(self,even):
-    print("Close RobotFaceWindow")
+#   def _closeEvent(self,even):
+#     print("Close RobotFaceWindow")
 
-class ShowSearchLamhang(QMainWindow):
+# class ShowSearchLamhang(QMainWindow):
   def __init__(self, app):
     super(ShowSearchLamhang,self).__init__()
     screen = app.primaryScreen()
