@@ -119,7 +119,7 @@ class ShowSearchContainer(QMainWindow):
   def initUI(self):
     self.setWindowTitle(self.title) 
     self.setWindowFlag(Qt.FramelessWindowHint)  
-    self.setGeometry(0, 0, 800, 580)
+    self.setGeometry(0, 0, 800, 600)
     self.brower = QWebView()
     self.brower.load(QUrl(tracuucontainer))
     windowLayout = QGridLayout()
@@ -145,7 +145,7 @@ class ShowSearchBooking(QMainWindow):
   def initUI(self):
     self.setWindowTitle(self.title) 
     self.setWindowFlag(Qt.FramelessWindowHint)  
-    self.setGeometry(0, 0, 800, 580)
+    self.setGeometry(0, 0, 800, 600)
     self.brower = QWebView()
     self.brower.load(QUrl(tracuubooking))
     windowLayout = QGridLayout()
@@ -171,7 +171,7 @@ class ShowSearchBill(QMainWindow):
   def initUI(self):
     self.setWindowTitle(self.title) 
     self.setWindowFlag(Qt.FramelessWindowHint)  
-    self.setGeometry(0, 0, 800, 580)
+    self.setGeometry(0, 0, 800, 600)
     self.brower = QWebView()
     self.brower.load(QUrl(tracuutheobill))
     windowLayout = QGridLayout()
@@ -197,7 +197,7 @@ class ShowSearchLamhang(QMainWindow):
   def initUI(self):
     self.setWindowTitle(self.title) 
     self.setWindowFlag(Qt.FramelessWindowHint)  
-    self.setGeometry(0, 0, 800, 580)
+    self.setGeometry(0, 0, 800, 600)
     self.brower = QWebView()
     self.brower.load(QUrl(taudanglamhang))
     windowLayout = QGridLayout()
