@@ -121,7 +121,7 @@ class ShowSearchContainer(QMainWindow):
     self.setWindowFlag(Qt.FramelessWindowHint)  
     self.setGeometry(left, top, wight, height)
     self.brower = QWebView()
-    self.brower.(QUrl(tracuucontainer))
+    self.brower.load(QUrl(tracuucontainer))
     windowLayout = QGridLayout()
     # widget = QWidget()
     # self.displayCamLabel = QLabel(widget)
