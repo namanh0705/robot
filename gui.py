@@ -18,7 +18,7 @@ tracuutheobill = "http://tracuucontainer.danangport.com:40004/p/bill/"
 taudanglamhang = "http://tracuucontainer.danangport.com:40004/p/tau-dang-lam-hang/"
 
 
-top = 50
+top = 0
 left = 0
 wight = 800
 height = 400
