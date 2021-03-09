@@ -119,7 +119,7 @@ class ShowSearchContainer(QMainWindow):
   def initUI(self):
     self.setWindowTitle(self.title) 
     self.setWindowFlag(Qt.FramelessWindowHint)  
-    self.setGeometry(left, top, wight, height)
+    self.setGeometry(0, 0, 800, 600)
     self.brower = QWebView()
     self.brower.load(QUrl(tracuucontainer))
     windowLayout = QGridLayout()
