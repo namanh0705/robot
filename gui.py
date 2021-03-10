@@ -24,8 +24,8 @@ taudanglamhang = "http://tracuucontainer.danangport.com:40004/p/tau-dang-lam-han
 
 top = 0
 left = 0
-wight = 800
-height = 400
+wight = 1280
+height = 720
 
 
 class RobotFaceWindow(QMainWindow):
