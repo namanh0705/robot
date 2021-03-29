@@ -37,7 +37,7 @@ class Worker(QRunnable):
         self.signals.signal_robottalkwindow.emit()
       elif int(x) ==3:
         print("Màn hình tra cứu container")
-        self.signals.signal_searchcontainer.emit()
+        self.signals.py.emit()
       elif int(x) ==4:
         print("Màn hình tra cứu booking")
         self.signals.signal_searchbooking.emit()

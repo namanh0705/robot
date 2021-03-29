@@ -26,7 +26,7 @@ taudanglamhang = "http://tracuucontainer.danangport.com:40004/p/tau-dang-lam-han
 from PyQt5.QtCore import *
 from PyQt5.QtWidgets import *
 from PyQt5.QtGui import *
-from PyQt5.QtWebEngineWidgets import *
+# from PyQt5.QtWebEngineWidgets import *
 import sys
 
 class MainWindow(QMainWindow):
@@ -49,7 +49,7 @@ class MainWindow(QMainWindow):
   def initUI1(self):
     self.setWindowTitle("Robot Metech")
     print("vào 2")
-    self.brower = QWebEngineView()
+    # self.brower = QWebEngineView()
     self.brower.load(QUrl(tracuucontainer))
     self.setCentralWidget(self.brower)  
   def initUI2(self):
